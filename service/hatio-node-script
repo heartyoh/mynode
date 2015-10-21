@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+# To register to service ..
+#
+# sudo cp hatio-node-script /etc/init.d/
+# sudo chmod 755 /etc/init.d/hatio-node-script
+# sudo chown root:root /etc/init.d/hatio-node-script
+# Then you need to register it to run at startup.
+#
+# sudo update-rc.d hatio-node-script defaults
 
 start() {
     export NVM_DIR="/home/pi/.nvm"
