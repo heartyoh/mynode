@@ -1,0 +1,27 @@
+#!/bin/bash
+
+start() {
+    export NVM_DIR="/home/pi/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+    nohup node /home/pi/mynode/firebase-node.js &
+    nohup node /home/pi/mynode/discovery-net.js &
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    ;;
+  status)
+    ;;
+  restart|reload|condrestart)
+    start
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart|reload|status}"
+    exit 1
+esac    
+
+exit 0
