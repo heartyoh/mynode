@@ -15,6 +15,7 @@ $ npm install
 ```
 $ sudo cp ~/mynode/service/hatio-node-script /etc/init.d
 $ sudo chmod 755 /etc/init.d/hatio-node-script
+$ sudo chown root:root /etc/init.d/hatio-node-script
 $ sudo update-rc.d hatio-node-script defaults
 ```
 
