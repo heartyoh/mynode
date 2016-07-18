@@ -1,8 +1,13 @@
-var Firebase = require('firebase');
+var firebase = require('firebase');
 var os = require('os');
 var hostname = os.hostname();
 
-var dataRef = new Firebase('https://hatio-node.firebaseIO.com/hosts/'+hostname);
+var config = {
+    databaseURL: "https://hatio-node.firebaseio.com"
+};
+
+var dataRef = firebase.initializeApp(config).database().ref('/hosts/' + hostname);
+
 var now = new Date();
 
 var info = {

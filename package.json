@@ -1,0 +1,24 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "discovery-net.js",
+  "dependencies": {
+    "dx-net": "^0.1.0-beta.0",
+    "firebase": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heartyoh/mynode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heartyoh/mynode/issues"
+  },
+  "homepage": "https://github.com/heartyoh/mynode#readme"
+}
