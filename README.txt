@@ -9,8 +9,6 @@ $ sudo apt-get install -y nodejs
 $ cd
 $ git clone https://github.com/heartyoh/mynode.git
 $ npm install
-$ sudo npm install -g os
-$ sudo npm install -g dx-net
 ```
 
 # Register Service
